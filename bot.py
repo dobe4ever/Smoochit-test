@@ -1,12 +1,16 @@
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
 
-@app.route('/templates')
+@app.route('/')
 def home():
-    return render_template('index.html')
+    return open("index.html", "r")
 
 
-def run():
-  app.run(host='0.0.0.0', port=8080)
+# def run():
+#   app.run(host='0.0.0.0', port=8080)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True)
+
