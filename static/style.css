@@ -16,24 +16,25 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
 .logo {
     margin-bottom: 40px;
-    width: 390px;
-    height: 100px;
+    width: 200px;
+    height: 50px;
 }
 
 .search-box {
-    width: 400px;
-    height: 40px;
+    width: 300px;
+    height: 30px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 16px;
     background-color: #fff;
+    text-align: center;
 }
 
 .search-button {
@@ -44,7 +45,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    background-color: #4285f4;
+    background-color: #EF4342; 
     cursor: pointer;
 }
 
