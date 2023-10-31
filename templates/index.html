@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>ChatGPT clone</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-      }
-      .chatbox {
-        height: 400px;
-        overflow: auto;
-        border: 1px solid #ccc;
-        padding: 10px;
-      }
-      .message {
-        margin-bottom: 10px;
-      }
-      .user {
-        color: blue;
-      }
-      .bot {
-        color: green;
-      }
-      input[type="text"] {
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-      }
-    </style>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoochit Test</title>
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
   </head>
+
+    
   <body>
-    <h1>ChatGPT clone</h1>
-    <div class="chatbox" id="chatbox"></div>
-    <input type="text" id="message" placeholder="Type your message here...">
-    <button id="send">Send</button>
+    <div class="container">
+        <img src="./static/logo-new.png" alt="Logo" class="logo">
+        <div class="chatbox" id="chatbox"></div>
+        <input type="text" id="message" placeholder="Type your message here...">
+        <button class="send-button" id="send">Send</button>
+        <a href="#" class="link">Create your own chatbot powered by ChatGPT</a>
+    </div>
+
+          
     <script>
       var chatbox = document.getElementById("chatbox");
       var message = document.getElementById("message");
