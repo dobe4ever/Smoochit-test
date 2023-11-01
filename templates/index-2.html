@@ -20,6 +20,9 @@
     </div>
 
     <script>
+      var userAvatarUrl = "./static/avatar-user-272x272.png";
+      var botAvatarUrl = "./static/avatar-bot-272x272.png";
+        
       var chatbox = document.getElementById("chatbox");
       var message = document.getElementById("message");
       var send = document.getElementById("send");
@@ -28,7 +31,7 @@
         var userMessage = message.value;
         var userDiv = document.createElement("div");
         userDiv.className = "message user";
-        userDiv.innerHTML = "<strong>You:</strong> " + userMessage;
+          userDiv.innerHTML = `<img src="${userAvatarUrl}" class="avatar user-avatar"> ${userMessage}`;
         chatbox.appendChild(userDiv);
 
         message.value = "";
@@ -41,7 +44,7 @@
           ) {
             var botDiv = document.createElement("div");
             botDiv.className = "message bot";
-            botDiv.innerHTML = "<strong>GPT:</strong> " + botMessage;
+              botDiv.innerHTML = `<img src="${botAvatarUrl}" class="avatar bot-avatar"> ${botMessage}`;
             chatbox.appendChild(botDiv);
 
             chatbox.scrollTop = chatbox.scrollHeight;

@@ -31,10 +31,9 @@ body {
 /* to test */
 .chatbox {
   width: 90%;
-  /* height: 400px; */
-  height: 50vh;
+  height: 400px;
   overflow: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   text-align: left;
   padding: 10px;
 }
@@ -74,21 +73,54 @@ input:focus {
   outline: none;
 }
 
+.user-avatar {
+    width: 8%;
+    border-radius: 50%; 
+    margin-right: 10px; 
+    vertical-align: middle;
+    margin-bottom: auto;
+}
+
+.bot-avatar {
+    width: 8%;
+    border-radius: 50%; 
+    margin-right: 10px; 
+    vertical-align: middle;
+    margin-bottom: auto;
+}
+
 .message {
-  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
 }
 
 .user {
-  color: blue;
+  /* background-color: #fff; */
+  color: #000;
+  padding: 10px;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;  
+  border-bottom-width: thin;
+  border-top-color: #dbdbdb;
+  border-top-style: solid;  
+  border-top-width: thin;
 }
 
 .bot {
-  color: green;
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 10px;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;  
+  border-bottom-width: thin;
+  border-top-color: #dbdbdb;
+  border-top-style: solid;  
+  border-top-width: thin;
 }
 
 /* to test */
 .link {
   color: #858585;
   font-size: 14px; 
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
