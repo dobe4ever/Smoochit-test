@@ -1,68 +1,94 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+/* done */
+* {
+  font-family: system-ui, sans-serif;
 }
 
+/* done */
 body {
-    background-color: #ffffff;
-    display: flex;
-    font-size: 1em;
-    font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display: flex;
 }
 
-.container {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
+/* done */
 .logo {
-    margin-top: 20px;
-    width: 75%;
+  margin-top: 30px;
+  width: 50%;
 }
 
+/* done */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 90vh;
+  width: 100%;
+}
+
+/* to test */
 .chatbox {
-    width: 100%;
-    height: 400px;
-    overflow: auto;
-    border: none;
-    padding: 10px;
+  width: 90%;
+  /* height: 400px; */
+  height: 50vh;
+  overflow: auto;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
 }
 
+/* done */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  max-width: 650px;
+}
+
+/* done */
 input[type="text"] {
-    font-size: 1em;
-    border-radius: 50px;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 15px;
+  border-radius: 5px;
 }
 
-.send-button {
-    font-size: 1em;
-    width: 100%;
-    margin-top: 0px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 50px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #EF4342; 
-    cursor: pointer;
+/* to test */
+.input-container #send {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  cursor: pointer;
+}
+
+/* done */
+input:focus {
+  outline: none;
 }
 
 .message {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .user {
-    color: blue;
+  color: blue;
 }
 
 .bot {
-    color: green;
+  color: green;
+}
+
+/* to test */
+.link {
+  color: #858585;
+  font-size: 14px; 
+  margin-bottom: 5px;
 }
