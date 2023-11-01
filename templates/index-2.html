@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smoochit Test</title>
     <link rel="stylesheet" type="text/css" href="./static/style.css">
   </head>
-    
+
   <body>
-    <div class="container">
-        <img src="./static/logo-new.png" alt="Logo" class="logo">
+    <div class="main">
+        <img src="./static/logo.png" alt="Logo" class="logo">
         <div class="chatbox" id="chatbox"></div>
         <div class="input-container">
-            <input type="text" id="message-input" placeholder="Type your message here...">
+            <input type="text" id="message" placeholder="Type your message...">
             <div id="send">➢</div>
+        </div>
         <a href="#" class="link">Create your own chatbot powered by ChatGPT</a>
     </div>
 
-          
     <script>
       var chatbox = document.getElementById("chatbox");
       var message = document.getElementById("message");

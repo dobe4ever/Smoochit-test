@@ -1,70 +1,94 @@
+/* done */
 * {
-    font-family: system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
+/* done */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display: flex;
 }
 
-h1 {
-    font-size: 33px;
-    font-weight: 600;
-    padding: 200px 0;
-}
-
+/* done */
 .logo {
-    margin-top: 20px;
-    width: 50%;
+  margin-top: 30px;
+  width: 50%;
 }
 
+/* done */
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 90vh;
+  width: 100%;
 }
 
-.bottom-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* to test */
+.chatbox {
+  width: 90%;
+  /* height: 400px; */
+  height: 50vh;
+  overflow: auto;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
 }
 
-.info {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 11px;
-}
-
-input[type="text"] {
-    border: 1px solid #ccc;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    font-size: 20px;
-    padding: 12px 15px;
-    border-radius: 5px;
-}
-
-input:focus {
-    outline: none;
-}
-
+/* done */
 .input-container {
-    position: relative;
-    width: 100%;
-    max-width: 650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  max-width: 650px;
 }
 
+/* done */
+input[type="text"] {
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+
+/* to test */
 .input-container #send {
-    position: absolute;
-    right: 0;
-    bottom: 15px;
-    cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  cursor: pointer;
+}
+
+/* done */
+input:focus {
+  outline: none;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.user {
+  color: blue;
+}
+
+.bot {
+  color: green;
+}
+
+/* to test */
+.link {
+  color: #858585;
+  font-size: 14px; 
+  margin-bottom: 5px;
 }
